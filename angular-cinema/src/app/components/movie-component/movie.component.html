@@ -1,0 +1,56 @@
+<!-- <h1>{{movie.id}}</h1>
+<h1>{{movie.title}}</h1>
+<h1>{{movie.synopsis}}</h1>
+<h1>{{movie.year}}</h1> -->
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container content-contaier">
+    <!-- <h1 class="display-4">Fluid jumbotron</h1> -->
+    <img class="img" src="{{movie.poster}}" alt="Card image cap">
+    <div class="content">
+      <div class="header">
+        <h2>{{ movie.title }}</h2>
+        <button type="button" (click)="goBack()" class="btn btn-primary go-back float-right">Go Back</button>
+      </div>
+      <div class="info-movie">
+        <div>
+          <div>
+            <h4>Room</h4>
+            <h6 class="tab">{{ movie.id }}</h6>
+          </div>
+          <div>
+            <h4>Genres</h4>
+            <div class="tab" *ngFor="let genre of movie.genres">
+              <h6>{{ genre }}</h6>
+            </div>
+          </div>
+          <div>
+            <h4>Year</h4>
+            <h6 class="tab">{{ movie.year }}</h6>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h4>Director</h4>
+            <h6 class="tab">{{ movie.director }}</h6>
+          </div>
+          <div>
+            <h4>Actors</h4>
+            <div class="tab" *ngFor="let actor of movie.actors">
+              <h6>{{ actor }}</h6>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h4>Synopsis</h4>
+            <h6 class="tab synopsis">{{ movie.synopsis }}</h6>
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </div>
+</div>

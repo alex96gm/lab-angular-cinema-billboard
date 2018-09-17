@@ -1,0 +1,9 @@
+<div class="container-films">
+  <div class="card" *ngFor="let movie of movies; let i = index;" (click)="goMovie(movie)" style="cursor:pointer;">
+    <img class="card-img-top" src="{{movie.poster}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ROOM {{i + 1}}</h5>
+      <h6>{{movie.title}}</h6>
+    </div>
+  </div>
+</div>

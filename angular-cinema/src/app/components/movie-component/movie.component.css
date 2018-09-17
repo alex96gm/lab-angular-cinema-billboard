@@ -1,0 +1,40 @@
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.content-contaier{
+  display: flex;
+}
+.content{
+  margin-left: 50px;
+  justify-content: flex-start;
+  width: 100%
+}
+.info-movie{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.tab{
+  margin-left: 40px;
+}
+.synopsis{
+  width: 200px;
+}
+.img{
+  height: 600px;
+}
+.title-header{
+  display: flex;
+  justify-content: space-between;
+  align-content:center;
+  flex-direction:column;
+  width: 300px;
+}
+.title-header h5{
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+}

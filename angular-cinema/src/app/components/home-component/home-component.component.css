@@ -1,0 +1,15 @@
+.container-films{
+  display:flex;
+  justify-content: space-around;
+  position:fixed;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+img{
+  height: 400px;
+  width: 250px;
+}
+.title, room{
+  text-align: center
+}
